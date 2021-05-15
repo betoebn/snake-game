@@ -28,19 +28,19 @@ class Snake:
         self.segments[0].forward(MOVE)
 
     def up(self):
-        if self.orientation() != DOWN:
+        if self.segments[0].heading() != DOWN:
             self.segments[0].setheading(UP)
 
     def down(self):
-        if self.orientation() != 90:
+        if self.segments[0].heading() != 90:
             self.segments[0].setheading(DOWN)
 
     def left(self):
-        if self.orientation() != RIGHT:
+        if self.segments[0].heading() != RIGHT:
             self.segments[0].setheading(LEFT)
 
     def right(self):
-        if self.orientation() != LEFT:
+        if self.segments[0].heading() != LEFT:
             self.segments[0].setheading(RIGHT)
 
 
