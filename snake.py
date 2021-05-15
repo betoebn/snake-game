@@ -32,7 +32,7 @@ class Snake:
             self.segments[0].setheading(UP)
 
     def down(self):
-        if self.orientation() != UP:
+        if self.orientation() != 90:
             self.segments[0].setheading(DOWN)
 
     def left(self):
