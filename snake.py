@@ -32,7 +32,7 @@ class Snake:
             self.segments[0].setheading(UP)
 
     def down(self):
-        if self.segments[0].heading() != 90:
+        if self.segments[0].heading() != UP:
             self.segments[0].setheading(DOWN)
 
     def left(self):
@@ -42,6 +42,4 @@ class Snake:
     def right(self):
         if self.segments[0].heading() != LEFT:
             self.segments[0].setheading(RIGHT)
-
-
 
