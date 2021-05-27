@@ -21,8 +21,14 @@ class Scoreboard(Turtle):
     def track_score(self):
         self.clear()
         self.write(f"Score: {self.score} High score: {self.high_score}", move=False, align="center", font=("Arial", 20, "normal"))
-        self.score += 1
 
-    # def game_over(self):
-    #     self.goto(0, 0)
-    #     self.write(f"Game Over! Your score is: {self.score - 1}", move=False, align="center", font=("Arial", 20, "normal"))
+    def update_score(self):
+        self.clear()
+        self.score += 1
+        self.write(f"Score: {self.score} High score: {self.high_score}", move=False, align="center", font=("Arial", 20, "normal"))
+
+
+
+
+
+
